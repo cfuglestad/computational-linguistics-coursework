@@ -12,6 +12,13 @@ from src.models.transformer_classifier import (
     bert_base_factory,
     mentalbert_factory,
 )
+from src.models.cnn_classifier import (
+    CNNClassifier,
+    Vocabulary,
+    cnn_default_factory,
+    cnn_tuned_factory,
+    make_optuna_objective,
+)
 
 __all__ = [
     "LogisticSoftmax",
@@ -22,4 +29,9 @@ __all__ = [
     "TransformerClassifier",
     "bert_base_factory",
     "mentalbert_factory",
+    "CNNClassifier",
+    "Vocabulary",
+    "cnn_default_factory",
+    "cnn_tuned_factory",
+    "make_optuna_objective",
 ]

@@ -7,6 +7,11 @@ from src.models.classifiers import (
     RandomForestBaseline,
     CLASSIFIER_REGISTRY,
 )
+from src.models.transformer_classifier import (
+    TransformerClassifier,
+    bert_base_factory,
+    mentalbert_factory,
+)
 
 __all__ = [
     "LogisticSoftmax",
@@ -14,4 +19,7 @@ __all__ = [
     "SVMBaseline",
     "RandomForestBaseline",
     "CLASSIFIER_REGISTRY",
+    "TransformerClassifier",
+    "bert_base_factory",
+    "mentalbert_factory",
 ]
